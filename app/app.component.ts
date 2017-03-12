@@ -7,12 +7,6 @@ import { Component } from '@angular/core';
             <div class="col-xs-4">
                 <weather-widget></weather-widget>
             </div>
-            <div class="col-xs-4">
-                <weather-widget></weather-widget>
-            </div>
-            <div class="col-xs-4">
-                <weather-widget></weather-widget>
-            </div>
         </div>
     `,
     styles: [

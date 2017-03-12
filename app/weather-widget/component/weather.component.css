@@ -1,17 +1,19 @@
 .card{
-    box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.24);
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.20);
+    
 }
 .card,
 .card-header,
 .card-footer {
     border: none;
-    border-radius: 0;
-    background-color: #00BCD4;
+    border-radius: 25px;
+    background-color: #1a95a5;
     color: #FFF
 }
 .card-header,
 .card-footer {
     padding: 1rem .5rem;
+    
 }
 .card-block {
     padding: 3rem;
