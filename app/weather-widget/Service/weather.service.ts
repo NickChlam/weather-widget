@@ -11,8 +11,6 @@ import { FORECAST_KEY, FORECAST_ROOT } from '../constants/constants';
 @Injectable()
 
 export class WeatherService {
-    
-
     constructor(private jsonp: Jsonp) { }
 
     getCurrentLoction(): Observable<any> {

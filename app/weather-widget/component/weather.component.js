@@ -54,4 +54,5 @@ var WeatherComponent = (function () {
     return WeatherComponent;
 }());
 exports.WeatherComponent = WeatherComponent;
+;
 //# sourceMappingURL=weather.component.js.map

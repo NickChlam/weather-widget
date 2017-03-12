@@ -26,7 +26,6 @@ export class WeatherComponent implements OnInit {
         this.getCurrentLocation();
 
     }
-
     getCurrentLocation() {
         this.service.getCurrentLoction()
             .subscribe(position => {
@@ -35,7 +34,6 @@ export class WeatherComponent implements OnInit {
             },
             err => console.error(err));
     }
-
     getCurrentWeather() {
         this.service.getCurrentWeather(this.pos.coords.latitude, this.pos.coords.longitude)
                     .subscribe(weather => {
@@ -48,4 +46,4 @@ export class WeatherComponent implements OnInit {
                     },
                     err => console.error(err));
     }
-}
+};
