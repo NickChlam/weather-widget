@@ -1,17 +1,21 @@
 <div class="card" (click)="toggleUnits()" [ngStyle]="setStyles()">
-    <div class="card-header">
+    <div class="card-header" [class.invisible]="!dataRecieved">
         <div class="col-xs-8">
             <p>{{ currentLocation }}</p>
         </div>
         <div class="col-xs-4 text-xs-right">
-            <h1>{{ weatherData.temp |  tempUnit: currentTempUnit | number: '.0-0'}} &deg;</h1>
+            <h1>{{ weatherData.temp |  tempUnit: currentTempUnit | number: '.0-0'}}&deg;</h1>
         </div>
     </div>
     <div class="card-block">
-        <h1><canvas id="icon"></canvas></h1>
+        <div id="indicator" [hidden]="dataRecieved">  
+            <i class="fa fa-refresh fa-spin fa-4x fa-fw"></i>
+            <span class="sr-only">Loading...</span>
+        </div>
+        <h1><canvas id="icon" [hidden]="!dataRecieved"></canvas></h1>
         <p>{{ weatherData.summary }}</p>
     </div>
-    <div class="card-footer">
+    <div class="card-footer" [class.invisible]="!dataRecieved">
         <div class="col-xs-5">
             <p>Wind</p>
             <p>{{ weatherData.wind | speedUnit: currentSpeedUnit  | number: '.0-2' }} {{ currentSpeedUnit }}</p>

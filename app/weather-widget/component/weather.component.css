@@ -31,3 +31,10 @@ p {
 img {
     transform: scale(0.5, 0.5);
 }
+#indicator {
+    height: 150px;
+
+}
+#indicator i {
+    margin-top: 2rem;
+}

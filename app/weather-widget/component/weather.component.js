@@ -20,6 +20,7 @@ var WeatherComponent = (function () {
         this.currentTempUnit = "F";
         this.currentLocation = "";
         this.icons = new Skycons();
+        this.dataRecieved = false;
     }
     WeatherComponent.prototype.ngOnInit = function () {
         this.getCurrentLocation();
@@ -44,6 +45,7 @@ var WeatherComponent = (function () {
                 _this.weatherData.icon = weather["currently"]["icon"];
             console.log("Weather: ", _this.weatherData); // remove me 
             _this.setIcon();
+            _this.dataRecieved = true;
         }, function (err) { return console.error(err); });
     };
     WeatherComponent.prototype.getLocationName = function () {

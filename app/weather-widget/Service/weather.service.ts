@@ -21,6 +21,7 @@ export class WeatherService {
                 }),
                     err => {
                         return Observable.throw(err);
+                        
                     }
             });
 

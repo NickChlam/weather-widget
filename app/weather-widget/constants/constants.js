@@ -48,5 +48,8 @@ exports.WEATHER_COLORS = {
         'background-color': '#34495E',
         'color': '#000'
     },
-};
+    'overcast': {
+        'background-color': '#37383a',
+        'color': '#000'
+    } };
 //# sourceMappingURL=constants.js.map
