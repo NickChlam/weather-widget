@@ -5,5 +5,6 @@ export class Weather{
         public wind: number,
         public humidity: number,
         public icon: string
+        
     ) { }
 }
