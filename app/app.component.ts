@@ -4,9 +4,15 @@ import { Component } from '@angular/core';
     selector: 'my-app',
     template: `
         <div class="container">
-            <div class="col-xs-4 offset-xs-4">
+            <div class="col-xs-4 offset-xs-1">
                 <weather-widget></weather-widget>
+             
             </div>
+            <div class="col-xs-4 offset-xs-1">
+                <weather-widget></weather-widget>
+             
+            </div>
+           
            
         </div>
     `,
