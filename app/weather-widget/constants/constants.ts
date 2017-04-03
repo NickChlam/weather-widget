@@ -50,5 +50,5 @@ export const WEATHER_COLORS = {
     'overcast':{
         'background-color': '#37383a',
         'color': '#000'
-    
+    }
 }

@@ -92,6 +92,7 @@ export class WeatherComponent implements OnInit {
     setIcon() {
         this.icons.add("icon", this.weatherData.icon);
         this.icons.play();
+        
     }
 
     setStyles(): Object {
